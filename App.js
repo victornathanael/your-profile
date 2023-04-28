@@ -1,12 +1,30 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import {
+    useFonts,
+    Montserrat_400Regular,
+    Montserrat_500Medium,
+    Montserrat_600SemiBold,
+} from '@expo-google-fonts/montserrat';
 import Header from './src/components/header/index';
+import YourProfile from './src/pages/your-profile/index';
 
 export default function App() {
+    const [fontsLoaded] = useFonts({
+        Montserrat_400Regular,
+        Montserrat_500Medium,
+        Montserrat_600SemiBold,
+    });
+
+    if (!fontsLoaded) {
+        return null;
+    }
+
     return (
         <View style={styles.container}>
             <Header />
-            <Text style={styles.Text}>Seu perfil</Text>
+            <YourProfile />
             <StatusBar style='light' />
         </View>
     );
@@ -14,10 +32,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
         backgroundColor: '#f8f8f8',
-        alignItems: 'center',
-    },
-    Text: {
-        fontSize: 50,
     },
 });
