@@ -18,7 +18,7 @@ git clone https://github.com/VictorNathanael/your-profile.git
 ### Instale as depêndencias
 
 ```
-npm  install
+npm install
 ```
 
 ## 🎯 Iniciando o projeto
