@@ -31,6 +31,14 @@ const data = [
         image: require('../../../assets/your-profile/cuidados-com-a-pele.png'),
         description: 'Dicas para manter a pele saudável e jovial',
     },
+    {
+        id: '5',
+        title: 'Cuidados com idosos',
+        color: '#D64550',
+
+        image: require('../../../assets/your-profile/cuidados-com-idosos.png'),
+        description: 'Aprenda a como prestar cuidados adequados a idosos',
+    },
 ];
 
 export default function QualificationsScroll() {
