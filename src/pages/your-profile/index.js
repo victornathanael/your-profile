@@ -6,91 +6,31 @@ import Warning from '../../components/warning/index';
 
 export default function YourProfile() {
     return (
-        <ScrollView style={styles.yourProfileContainer}>
+        <ScrollView style={styles.scrollViewContainer}>
             <Warning />
-            <Text
-                style={{
-                    fontSize: 20,
-                    marginTop: 20,
-                    marginBottom: 5,
-                    marginLeft: 20,
-                    fontFamily: 'Montserrat_500Medium',
-                }}
-            >
-                Seu Perfil
-            </Text>
+            <Text style={styles.textProfile}>Seu Perfil</Text>
 
-            <View
-                style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    marginStart: 20,
-                }}
-            >
+            <View style={styles.profilePhotoContainer}>
                 <Image
-                    style={{
-                        height: 90,
-                        width: 90,
-                        borderRadius: 100,
-                    }}
+                    style={styles.profilePhoto}
                     source={require('../../../assets/your-profile/user-logo.png')}
                 ></Image>
                 <Profile />
             </View>
-            <Text
-                style={{
-                    alignSelf: 'center',
-                    width: '90%',
-                    height: 1,
-                    backgroundColor: '#d3d3d3',
-                    marginVertical: 10,
-                }}
-            ></Text>
             <View style={styles.completeProfile}>
-                <Text
-                    style={{
-                        color: '#07689f',
-                        fontFamily: 'Montserrat_600SemiBold',
-                        fontSize: 18,
-                        marginRight: 10,
-                        marginTop: 10,
-                        marginVertical: 5,
-                    }}
-                >
-                    Completar perfil
-                </Text>
+                <Text style={styles.completeProfileText}>Completar perfil</Text>
                 <ArrowRightIcon
+                    style={{ paddingTop: 5 }}
                     name='arrowright'
                     color={'#07689f'}
                     size={22}
                 ></ArrowRightIcon>
             </View>
-            <View
-                style={{
-                    justifyContent: 'space-between',
-                    flexDirection: 'row',
-                    marginTop: 30,
-                    marginHorizontal: 10,
-                }}
-            >
-                <Text
-                    style={{
-                        fontSize: 18,
-                        fontFamily: 'Montserrat_500Medium',
-                    }}
-                >
+            <View style={styles.professionalQualifications}>
+                <Text style={styles.professionalQualificationsText}>
                     Capacitações profissionais
                 </Text>
-                <Text
-                    style={{
-                        color: '#07689f',
-                        fontSize: 18,
-                        fontFamily: 'Montserrat_600SemiBold',
-                        paddingRight: 20,
-                    }}
-                >
-                    Ver mais
-                </Text>
+                <Text style={styles.seeMore}>Ver mais</Text>
             </View>
             <QualificationsScroll />
         </ScrollView>
@@ -98,18 +38,66 @@ export default function YourProfile() {
 }
 
 const styles = StyleSheet.create({
-    yourProfileContainer: {
+    scrollViewContainer: {
         flex: 1,
+        height: '100%',
+        width: '100%',
+    },
+
+    textProfile: {
+        fontSize: 20,
+        marginTop: 20,
+        marginBottom: 5,
+        marginLeft: 20,
+        fontFamily: 'Montserrat_500Medium',
+    },
+
+    profilePhotoContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginStart: 20,
+        paddingEnd: 60,
+    },
+
+    profilePhoto: {
+        height: 90,
+        width: 90,
+        borderRadius: 100,
     },
 
     completeProfile: {
+        display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
     },
-    img: {
-        height: 150,
-        width: 170,
-        borderRadius: 10,
+
+    completeProfileText: {
+        color: '#07689f',
+        fontFamily: 'Montserrat_600SemiBold',
+        fontSize: 18,
+        marginRight: 10,
+        marginTop: 10,
+        marginVertical: 5,
+    },
+
+    professionalQualifications: {
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        marginTop: 30,
+        marginHorizontal: 10,
+    },
+
+    professionalQualificationsText: {
+        fontSize: 18,
+        fontFamily: 'Montserrat_500Medium',
+    },
+
+    seeMore: {
+        color: '#07689f',
+        fontSize: 18,
+        fontFamily: 'Montserrat_600SemiBold',
+        paddingRight: 20,
     },
 });

@@ -1,46 +1,49 @@
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Star from '../star/index';
 
 export default function Profile() {
     return (
-        <View style={{ margin: 20, justifyContent: 'center' }}>
-            <Text
-                style={{
-                    fontSize: 20,
-                    fontFamily: 'Montserrat_600SemiBold',
-                }}
-            >
-                Carolina Magalhães
-            </Text>
-            <Text
-                style={{
-                    marginVertical: 5,
-                    fontFamily: 'Montserrat_400Regular',
-                    paddingBottom: 5,
-                }}
-            >
-                São Paulo - SP
-            </Text>
-            <View
-                style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                }}
-            >
+        <View style={styles.profileContainer}>
+            <Text style={styles.profileName}>Carolina Magalhães</Text>
+            <Text style={styles.profileCity}>São Paulo - SP</Text>
+            <View style={styles.starsContainer}>
                 <Star />
                 <Star />
                 <Star />
                 <Star />
                 <Star />
-                <Text
-                    style={{
-                        fontSize: 14,
-                        fontFamily: 'Montserrat_400Regular',
-                    }}
-                >
-                    (0)
-                </Text>
+                <Text style={styles.countStar}>(0)</Text>
             </View>
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+    profileContainer: {
+        display: 'flex',
+        margin: 20,
+        justifyContent: 'flex-start',
+        width: '80%',
+    },
+
+    profileName: {
+        width: '100%',
+        fontSize: 20,
+        fontFamily: 'Montserrat_600SemiBold',
+        flexWrap: 'wrap',
+    },
+    profileCity: {
+        marginVertical: 5,
+        fontFamily: 'Montserrat_400Regular',
+        paddingBottom: 5,
+        flexWrap: 'wrap',
+    },
+    starsContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    countStar: {
+        fontSize: 14,
+        fontFamily: 'Montserrat_400Regular',
+    },
+});

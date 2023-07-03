@@ -43,8 +43,9 @@ const styles = StyleSheet.create({
         flex: 1,
         fontFamily: 'Montserrat_500Medium',
         fontSize: 16,
-        padding: 0,
         backgroundColor: 'white',
         marginLeft: 10,
+        flexWrap: 'wrap',
+        width: '100%',
     },
 });
