@@ -5,9 +5,9 @@ export default function Warning() {
     return (
         <View style={styles.warningContainer}>
             <WarningIcon
-                style={{ padding: 5, paddingHorizontal: 15 }}
+                style={{ padding: 5, paddingHorizontal: 20 }}
                 name='warning'
-                size={25}
+                size={23}
                 color='#8b6421'
             ></WarningIcon>
             <Text style={styles.warningText}>
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 10,
         borderColor: '#d6bb8e',
-        paddingVertical: 10,
+        paddingVertical: 15,
     },
     warningText: {
         flexWrap: 'wrap',
