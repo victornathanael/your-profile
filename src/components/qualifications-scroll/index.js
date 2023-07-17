@@ -43,7 +43,7 @@ const data = [
 
 export default function QualificationsScroll() {
     return (
-        <ScrollView horizontal>
+        <ScrollView horizontal style={{ marginLeft: 7 }}>
             <FlatList
                 data={data}
                 renderItem={({ item }) => (
