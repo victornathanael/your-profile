@@ -27,7 +27,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#006557',
         width: '100%',
-        height: '20%',
+        height: '18%',
+        position: 'sticky',
+        top: 0,
+        zIndex: 1,
     },
     inputContainer: {
         flexDirection: 'row',
