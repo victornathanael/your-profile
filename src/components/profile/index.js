@@ -21,14 +21,15 @@ export default function Profile() {
 const styles = StyleSheet.create({
     profileContainer: {
         display: 'flex',
-        margin: 20,
+        marginHorizontal: 15,
+        marginVertical: 10,
         justifyContent: 'flex-start',
         width: '80%',
     },
 
     profileName: {
         width: '100%',
-        fontSize: 20,
+        fontSize: 18,
         fontFamily: 'Montserrat_600SemiBold',
         flexWrap: 'wrap',
     },
@@ -37,13 +38,14 @@ const styles = StyleSheet.create({
         fontFamily: 'Montserrat_400Regular',
         paddingBottom: 5,
         flexWrap: 'wrap',
+        fontSize: 12,
     },
     starsContainer: {
         flexDirection: 'row',
         alignItems: 'center',
     },
     countStar: {
-        fontSize: 14,
+        fontSize: 12,
         fontFamily: 'Montserrat_400Regular',
     },
 });
