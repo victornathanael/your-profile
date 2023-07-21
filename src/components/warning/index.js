@@ -5,9 +5,9 @@ export default function Warning() {
     return (
         <View style={styles.warningContainer}>
             <WarningIcon
-                style={{ padding: 5, paddingHorizontal: 20 }}
+                style={{ padding: 5, paddingHorizontal: 17 }}
                 name='warning'
-                size={23}
+                size={18}
                 color='#8b6421'
             ></WarningIcon>
             <Text style={styles.warningText}>
