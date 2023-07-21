@@ -7,7 +7,7 @@ export default function Header() {
             <View style={styles.inputContainer}>
                 <SearchIcon
                     name='search'
-                    size={22}
+                    size={18}
                     style={styles.inputIcon}
                 ></SearchIcon>
                 <TextInput
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     input: {
         flex: 1,
         fontFamily: 'Montserrat_500Medium',
-        fontSize: 16,
+        fontSize: 14,
         backgroundColor: 'white',
         marginLeft: 10,
         flexWrap: 'wrap',
