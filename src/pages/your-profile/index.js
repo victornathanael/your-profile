@@ -1,33 +1,32 @@
-import {
-    StyleSheet,
-    Text,
-    View,
-    Image,
-    useWindowDimensions,
-} from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import ArrowRightIcon from 'react-native-vector-icons/AntDesign';
 import QualificationsScroll from '../../components/qualifications-scroll/index';
 import Profile from '../../components/profile/index';
 import Warning from '../../components/warning/index';
 
 export default function YourProfile() {
-    const windowDimensions = useWindowDimensions();
     return (
         <View style={styles.scrollViewContainer}>
             <Warning />
-            <Text style={styles.textProfile}>Seu Perfil</Text>
+            <Text style={styles.yourProfileText}>Seu Perfil</Text>
 
             <View style={styles.profilePhotoContainer}>
                 <Image
-                    style={[
-                        styles.profilePhoto,
-                        windowDimensions.width < 340 && styles.smallPhoto,
-                    ]}
+                    style={[styles.profilePhoto]}
                     source={require('../../../assets/your-profile/user-logo.png')}
                 ></Image>
                 <Profile />
             </View>
-            <hr size={1} width={'90%'} color='D3D3D3'></hr>
+            <View
+                style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginTop: 20,
+                    marginBottom: 5,
+                }}
+            >
+                <View style={styles.horizontalLine} />
+            </View>
             <View style={styles.completeProfile}>
                 <Text style={styles.completeProfileText}>Completar perfil</Text>
                 <ArrowRightIcon
@@ -57,9 +56,9 @@ const styles = StyleSheet.create({
         width: '100%',
     },
 
-    textProfile: {
-        fontSize: 20,
-        marginTop: 20,
+    yourProfileText: {
+        fontSize: 18,
+        marginTop: 25,
         marginBottom: 5,
         marginLeft: 20,
         fontFamily: 'Montserrat_500Medium',
@@ -74,14 +73,9 @@ const styles = StyleSheet.create({
     },
 
     profilePhoto: {
-        height: 90,
-        width: 90,
+        height: 75,
+        width: 75,
         borderRadius: 100,
-    },
-
-    smallPhoto: {
-        height: 80,
-        width: 80,
     },
 
     completeProfile: {
@@ -94,13 +88,20 @@ const styles = StyleSheet.create({
     completeProfileText: {
         color: '#07689f',
         fontFamily: 'Montserrat_600SemiBold',
-        fontSize: 18,
+        fontSize: 14,
         marginRight: 10,
         marginTop: 10,
         marginVertical: 5,
     },
 
+    horizontalLine: {
+        height: 1,
+        width: '90%',
+        backgroundColor: '#d3d3d3',
+    },
+
     professionalQualifications: {
+        display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
         flexDirection: 'row',
@@ -109,16 +110,16 @@ const styles = StyleSheet.create({
     },
 
     professionalQualificationsText: {
-        fontSize: 18,
+        fontSize: 16,
         fontFamily: 'Montserrat_500Medium',
         marginLeft: 7,
     },
 
     seeMore: {
         color: '#07689f',
-        fontSize: 16,
+        fontSize: 14,
         fontFamily: 'Montserrat_600SemiBold',
-        paddingRight: 20,
+        paddingRight: 10,
         paddingLeft: 7,
     },
 });
