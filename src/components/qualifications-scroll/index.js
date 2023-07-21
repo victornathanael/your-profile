@@ -7,7 +7,7 @@ const data = [
         title: 'Parceiros',
         color: '#d48a04',
         image: require('../../../assets/your-profile/alimentos.png'),
-        description: 'Diabetes: alimentos para evitar',
+        description: 'Diabetes: alimentos para evitar.',
     },
     {
         id: '2',
@@ -25,7 +25,7 @@ const data = [
     },
     {
         id: '4',
-        title: 'Cuidados com a pele',
+        title: 'Skincare',
         color: '#ffa07a',
 
         image: require('../../../assets/your-profile/cuidados-com-a-pele.png'),
@@ -33,7 +33,7 @@ const data = [
     },
     {
         id: '5',
-        title: 'Cuidados com idosos',
+        title: 'Terceira idade',
         color: '#D64550',
 
         image: require('../../../assets/your-profile/cuidados-com-idosos.png'),
