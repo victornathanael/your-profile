@@ -1,26 +1,26 @@
 {
-    "name": "your-profile",
-    "version": "1.0.0",
-    "scripts": {
-        "start": "expo start",
-        "android": "expo run:android",
-        "ios": "expo run:ios",
-        "web": "expo start --web"
-    },
-    "dependencies": {
-        "@expo-google-fonts/montserrat": "^0.2.3",
-        "@expo/webpack-config": "^18.0.4",
-        "expo": "^48.0.15",
-        "expo-font": "^11.1.1",
-        "expo-status-bar": "~1.4.4",
-        "react": "18.2.0",
-        "react-dom": "^18.2.0",
-        "react-native": "0.71.7",
-        "react-native-vector-icons": "^9.2.0",
-        "react-native-web": "^0.18.12"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.20.0"
-    },
-    "private": true
+  "name": "your-profile",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo-google-fonts/montserrat": "^0.2.3",
+    "@expo/webpack-config": "^18.0.4",
+    "expo": "^48.0.15",
+    "expo-font": "^11.1.1",
+    "expo-status-bar": "~1.4.4",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "0.71.8",
+    "react-native-vector-icons": "^9.2.0",
+    "react-native-web": "^0.18.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
 }
