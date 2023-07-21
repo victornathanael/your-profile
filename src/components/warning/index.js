@@ -11,7 +11,7 @@ export default function Warning() {
                 color='#8b6421'
             ></WarningIcon>
             <Text style={styles.warningText}>
-                <Text style={{ fontFamily: 'Montserrat_600SemiBold' }}>
+                <Text style={{ fontFamily: 'Montserrat_700Bold' }}>
                     Completar perfil:{' '}
                 </Text>
                 Preencha suas informações para encontrar pacientes.
@@ -31,13 +31,13 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 10,
         borderColor: '#d6bb8e',
-        paddingVertical: 15,
+        paddingVertical: 10,
     },
     warningText: {
         flexWrap: 'wrap',
         width: '90%',
         fontFamily: 'Montserrat_500Medium',
-        fontSize: 16,
+        fontSize: 12,
         color: '#987635',
         paddingRight: 10,
     },
